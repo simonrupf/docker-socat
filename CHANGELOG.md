@@ -1,5 +1,8 @@
 # socat change log
 
+## 0.1.3
+re-build of 0.1.2 including ppc64le architecture
+
 ## 0.1.2
 update to Alpine 3.14 / socat 1.7.4.1-r1
 
