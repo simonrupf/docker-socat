@@ -1,5 +1,8 @@
 # socat change log
 
+## 0.1.7
+update to Alpine 3.18 / socat 1.7.4.4-r1
+
 ## 0.1.6
 update to Alpine 3.17 / socat 1.7.4.4-r0
 

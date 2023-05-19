@@ -1,4 +1,4 @@
-FROM alpine:3.17
+FROM alpine:3.18
 
 RUN \
     apk upgrade --no-cache && \
@@ -15,6 +15,9 @@ RUN \
     mv /usr/bin/socat /srv/bin/socat
 
 FROM scratch
+LABEL org.opencontainers.image.authors="Simon Rupf <simon@rupf.net>" \
+      org.opencontainers.image.source=https://github.com/simonrupf/docker-socat \
+      org.opencontainers.image.version="${VERSION}"
 COPY --from=0 /srv/ /
 USER 255:255
 ENTRYPOINT ["/bin/socat"]
