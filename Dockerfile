@@ -6,13 +6,13 @@ RUN \
         libcap \
         socat \
     && \
-    setcap 'cap_net_bind_service=+ep' /usr/bin/socat && \
     mkdir -p /srv/bin /srv/usr/lib /srv/lib && \
-    for SO in $(ldd /usr/bin/socat | awk '{print $3}') ; \
+    mv /usr/bin/socat1 /srv/bin/socat && \
+    setcap 'cap_net_bind_service=+ep' /srv/bin/socat && \
+    for SO in $(ldd /srv/bin/socat | awk '{print $3}') ; \
     do \
         cp $SO /srv$SO ; \
-    done && \
-    mv /usr/bin/socat /srv/bin/socat
+    done
 
 FROM scratch
 LABEL org.opencontainers.image.authors="Simon Rupf <simon@rupf.net>" \
