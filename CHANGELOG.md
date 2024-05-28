@@ -1,5 +1,8 @@
 # socat change log
 
+## 0.2.1
+update to Alpine 3.20 / socat 1.8.0.0-r0 / openssl 3.3.0
+
 ## 0.2.0
 update to Alpine 3.19 / socat 1.8.0.0-r0
 
@@ -26,4 +29,3 @@ update to Alpine 3.13 / socat 1.7.4.1-r0
 
 ## 0.1.0
 creating container with alpine's socat 1.7.3.4-r0
-
