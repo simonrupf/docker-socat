@@ -1,5 +1,8 @@
 # socat change log
 
+## 0.2.2
+update to Alpine 3.21 / socat 1.8.0.1-r0 / openssl 3.3.2
+
 ## 0.2.1
 update to Alpine 3.20 / socat 1.8.0.0-r0 / openssl 3.3.0
 
